@@ -1,0 +1,1628 @@
+    @import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:300,600,700,900';
+    @import 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+    /*Global Settings*/
+    body {
+        font-family: 'Lora', serif;
+    }
+
+
+     .ocultar_desktop {
+
+            visibility: hidden;
+            display: none;
+
+
+        }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #424242;
+        margin-bottom: 35px;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 7rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+
+    }
+
+    h6 {
+        font-size: 2.0rem;
+        font-weight: 300;
+
+    }
+
+
+    p {
+        font-size: 1.8rem;
+        font-style: italic;
+        color: #818181;
+    }
+
+    a {
+        transition: all 0.3s ease-in-out;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    .blockquote p {
+        font-size: 32px;
+        line-height: 45px;
+        padding-left: 30px;
+        border-left: 3px solid #424242;
+        color: #424242;
+    }
+
+    .title {
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    .title:after {
+        content: '';
+        height: 5px;
+        width: 40px;
+        background-color: #62aa94;
+        position: absolute;
+        top: 81px;
+        left: calc(50% - 20px);
+    }
+
+    .linha-divisoria {
+
+        border-top: 1px dashed #382622;
+        border-bottom: 1px solid #0b090e;
+        color: #fff;
+        background-color: #fff;
+        height: 4px;
+
+
+    }
+
+    .linha-divisoria-2 {
+
+        border-top: 1px dashed #382622;
+        border-bottom: 1px solid #0b090e;
+        color: #fff;
+        background-color: #fff;
+        height: 2px;
+        opacity: 0.2;
+
+    }
+
+    /*Bootstrap*/
+    .navbar-ubutia {
+        background-image: none;
+        background-color: #131212ba;
+        margin-bottom: 0;
+        border-radius: 0;
+        border-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .form-control option {
+        color: #424242;
+    }
+
+    .form-control {
+        border-radius: 0;
+        padding: 25px;
+        font-size: 18px;
+        font-style: italic;
+        background-color: transparent;
+        color: #424242;
+        margin-bottom: 30px;
+        border-color: #51c2b9;
+    }
+
+    .form-control:focus {
+        border-color: #51c2b9;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(81, 194, 185, 0.6);
+    }
+
+    .form-control::-webkit-input-placeholder {
+        color: #fff;
+    }
+
+    .form-control:-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+    }
+
+    .form-control::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+    }
+
+    .form-control:-ms-input-placeholder {
+        color: #fff;
+    }
+
+    .element .form-control::-webkit-input-placeholder {
+        color: #424242;
+    }
+
+    .element .form-control:-moz-placeholder {
+        /* Firefox 18- */
+        color: #424242;
+    }
+
+    .element .form-control::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #424242;
+    }
+
+    .element .form-control:-ms-input-placeholder {
+        color: #424242;
+    }
+
+
+
+
+    /*Helper class*/
+    .mt80 {
+        margin-top: 40px;
+    }
+
+    .mb80 {
+        margin-bottom: 80px;
+    }
+
+    .mr60 {
+        margin-right: 2%;
+    }
+
+    .bg-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .bg-img div {
+        z-index: 1;
+        position: relative;
+    }
+
+    .bg-img:after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 0;
+        top: 0;
+    }
+
+    .section {
+        padding: 5% 0;
+    }
+
+    .contact_section {
+
+        padding: 0;
+
+    }
+
+    .ubutia-icon {
+        background: transparent url(../images/logo.png) no-repeat;
+        width: 187px;
+        height: 68px;
+        display: block;
+    }
+
+
+    .logo-cliente img {
+        width: 260px;
+        height: 80px;
+        margin-top: -4%;
+    }
+
+    .titulo-cliente h3 {
+
+        color: white;
+        padding-top: 0.5%;
+        font-size: 6.0rem;
+
+
+    }
+
+    .titulo-cliente h4 {
+
+        color: white;
+        padding-top: 0.5%;
+        font-size: 5.0rem;
+
+
+    }
+
+    .titulo-cliente h5 {
+
+        color: white;
+        padding-top: 2.0%;
+        font-size: 4.0rem;
+
+
+    }
+
+    .titulo-produtos h3 {
+
+        color: white;
+        font-size: 6.0rem;
+        padding-top: 0.5%;
+
+
+    }
+
+
+
+    .noticia-topo h5 {
+
+        font-size: 3.2rem;
+        font-weight: 300;
+
+        text-transform: none;
+        font-family: sans-serif;
+        line-height: 4.5rem;
+
+    }
+
+    .body-cliente p {
+
+        font-size: 2.0rem;
+
+    }
+
+    .graphic-design {
+        background: transparent url(../images/graphic-design.png) no-repeat;
+        width: 120px;
+        height: 120px;
+        display: block;
+    }
+
+    .webdevelopment {
+        background: transparent url(../images/webdevelopment.png) no-repeat;
+        width: 120px;
+        height: 120px;
+        display: block;
+    }
+
+    .printing {
+        background: transparent url(../images/printing.png) no-repeat;
+        width: 120px;
+        height: 120px;
+        display: block;
+    }
+
+    .play-icon {
+        background: transparent url(../images/video-play-icon.png) no-repeat;
+        width: 70px;
+        height: 69px;
+        display: block;
+    }
+
+    /*ubutia Card*/
+    .ubutia-card {
+        text-align: center;
+
+    }
+
+    .ubutia-card .ubutia-card-header {
+        margin-bottom: 25px;
+    }
+
+    .ubutia-card .ubutia-card-header-logotipos {
+        margin-bottom: 20px;
+    }
+
+    .ubutia-card .ubutia-card-header .card-icon {
+        border-radius: 100%;
+        display: inline-block;
+        height: 120px;
+        width: 120px;
+        line-height: 120px;
+        position: relative;
+    }
+
+
+    /*Button*/
+    .ubutia-btn {
+        border-color: #51c2b9;
+        font-style: italic;
+        color: #51c2b9;
+        border-radius: 0;
+        letter-spacing: 3px;
+        padding: 15px 50px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .ubutia-btn:hover {
+        background-color: #51c2b9;
+        color: #fff;
+    }
+
+    .solid {
+        background-color: #51c2b9;
+        color: #fff;
+    }
+
+    .solid:hover {
+        background-color: #fff;
+        color: #51c2b9;
+    }
+
+    .small-btn {
+        padding: 10px 130px;
+    }
+
+    /*Element page*/
+    .element .navigation-bar {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .element .navigation-bar a {
+        color: #424242;
+    }
+
+    .element .dark-bar {
+        background-color: #fff;
+    }
+
+    .element .menu:after {
+        color: white;
+    }
+
+    .element .title:after {
+        left: 0;
+        top: 60px;
+    }
+
+    .headings p {
+        margin-bottom: 40px;
+    }
+
+    .social-icons ul {
+        text-align: center;
+        padding-left: 0;
+        display: inline-block;
+    }
+
+    .social-icons ul a li {
+        display: inline-block;
+        list-style-type: none;
+        border: 2px solid #51c2b9;
+        margin-right: 10px;
+        background-color: #51c2b9;
+        color: #fff;
+        font-size: 18px;
+        line-height: 32px;
+        width: 36px;
+    }
+
+    .social-icons ul a li:last-child {
+        margin-right: 0;
+    }
+
+    .social-icons ul a:hover li {
+        color: #51c2b9;
+        background-color: #fff;
+    }
+
+
+    /*Navigation*/
+    #menu-item {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-item {
+        background-color: #1a1a1a;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .menu-item ul {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .menu-item ul a li {
+        padding: 15px 0;
+        list-style-type: none;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-item ul a:hover li {
+        color: #51c2b9;
+        text-decoration: none;
+    }
+
+    .hide-menu {
+        margin-top: -377px;
+    }
+
+    .show-menu {
+        margin-top: 0;
+    }
+
+    .dark-bar {
+        background-color: #424242;
+        background-image: none;
+    }
+
+
+
+    .clientes .navigation-bar {
+
+        border-bottom: 0 solid rgba(255, 255, 255, 0.2);
+        font-size: 30px;
+        height: 100px;
+        margin-top: -70px;
+    }
+
+
+
+
+    .navigation-bar {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+        font-size: 30px;
+
+    }
+
+    .navigation-bar a {
+        color: #fff;
+    }
+
+    .menu {
+        position: relative;
+        display: inline-block;
+
+    }
+
+
+
+
+    .menu:after {
+        position: absolute;
+        left: -65px;
+        top: -28px;
+        color: #fff;
+        font-size: 4.5rem;
+
+    }
+
+    .m:after {
+        content: 'MENU';
+    }
+
+    .c:after {
+        content: 'FECHAR';
+    }
+
+
+    /*Home page*/
+    .header {
+        background-image: url(../images/1.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+
+    /*Central dos Sítios*/
+    .header_c1 {
+        background-image: url(../img_centraldossitios/fundo2.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+
+    /*Instituto JCalvino*/
+    .header_c2 {
+        background-image: url(../img_jcalvino/fundo_jcalvino.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+
+    /*AddTech*/
+    .header_c3 {
+        background-image: url(../img_addtech/fundo.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+
+    /*CF Contabilidade*/
+    .header_c4 {
+        background-image: url(../img_cfcontabilidade/fundo.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+
+    /*JL Atacado*/
+    .header_c5 {
+        background-image: url(../img_jlatacado/fundo.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+    /*Previnity*/
+    .header_c6 {
+        background-image: url(../img_previnity/fundo.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+
+    /* UNYSS WEB */
+
+    .header_c7 {
+        background-image: url(../img_unyss_web/fundo_unyss_web.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+        
+    /* UNYSS APP */
+
+
+     .header_c8 {
+        background-image: url(../img_unyss_app/fundo_unyss_app.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+
+     /* Sítio Terra Cota */
+
+
+     .header_c9 {
+        background-image: url(../img_terracota/fundo_terra_cota.jpg);
+        height: 100vh;
+        position: relative;
+        min-height: 659px;
+    }
+
+
+
+
+    .intro-box {
+        height: 100vh;
+        display: table;
+        text-align: center;
+        width: 100%;
+    }
+
+    .intro {
+        display: table-cell;
+        vertical-align: middle;
+        padding-bottom: 8%;
+    }
+
+    .header h1 {
+        margin: 0;
+    }
+
+    .header h1,
+    .header p {
+        color: #fff;
+        letter-spacing: 2px;
+    }
+
+    .header p {
+        font-size: 32px;
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    .header .ubutia-btn {
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .header .ubutia-btn:hover {
+        background-color: #fff;
+        color: #424242;
+    }
+
+    .navigation-bar {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 50px 0;
+        font-size: 30px;
+    }
+
+    .clientes .row {
+
+        margin: 6% 0;
+    }
+
+
+
+    .about {
+        background-color: #f8f8f8;
+    }
+
+    .about img {
+        margin: 30px auto;
+        display: block;
+    }
+
+    .seta-baixo img {
+
+        width: 80px;
+        height: 40px;
+        opacity: 0.5;
+
+
+    }
+
+
+    .about span {
+        font-family: 'Raleway';
+        font-weight: 600;
+    }
+
+    .about p {
+
+        font-size: 2.5rem;
+        text-align: left;
+
+
+    }
+
+
+    .expert {
+        background-color: #f8f8f8;
+    }
+
+    .expert p {
+        line-height: 133%;
+        margin-top: 11%;
+    }
+
+    .expert .bg-img {
+        background-image: url(../images/2.jpg);
+        background-position-x: 85%;
+        height: 100%;
+    }
+
+    .expert .bg-img:after {
+        display: none;
+    }
+
+    .expert .section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    .ubutia-quote {
+        background-image: url(../images/3.jpg);
+        /*padding: 120px 0;*/
+        color: #fff;
+        font-style: italic;
+    }
+
+    .ubutia-quote p {
+        font-size: 32px;
+        color: #fff;
+    }
+
+    .ubutia-quote .quote {
+        margin-bottom: 40px;
+    }
+
+    .ubutia-quote .author {
+        font-size: 21px;
+        margin-bottom: 40px;
+    }
+
+    .watch {
+        background-image: url(../images/7.jpg);
+        font-style: italic;
+        font-size: 32px;
+        color: #fff;
+        padding: 150px 0;
+    }
+
+    .watch a {
+        border: 2px solid #fff;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 70px;
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+        padding: 0;
+        font-size: 21px;
+        color: #fff;
+    }
+
+    .watch a:hover,
+    .watch a:active,
+    .watch a:focus {
+        background-color: #fff;
+        color: #424242;
+    }
+
+    .subscribe {
+        background-image: url(../images/11.jpg);
+    }
+
+    .subscribe .ubutia-btn {
+        margin-bottom: 0;
+        color: #424242;
+        font-weight: 700;
+        border-color: #fff;
+        background-color: #fff;
+    }
+
+    .subscribe .ubutia-btn:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .subscribe p {
+        color: #fff;
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .subscribe .form-control {
+        width: 320px;
+        margin-bottom: 0;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .contact .ubutia-card {
+        background-color: #eae0e0;
+        padding: 35px 0;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 45px;
+    }
+
+    /*.contact .ubutia-card:hover{
+        box-shadow: 0px 4px 2px rgba(17, 17, 17, 0.3);
+    }*/
+    .contact .ubutia-card .ubutia-card-header {
+        margin-bottom: 15px;
+        font-size: 21px;
+        color: #51c2b9;
+    }
+
+    .contact .ubutia-card .ubutia-card-content h3 {
+        letter-spacing: 2px;
+        margin-bottom: 45px;
+    }
+
+    .contact .ubutia-card .ubutia-card-content h3:after {
+        top: 40px;
+    }
+
+    .contact .ubutia-card .ubutia-card-content p {
+        font-size: 18px;
+    }
+
+    .footer {
+        background-color: #202020;
+        text-align: center;
+        padding: 0;
+        margin: 3% 0 0 0;
+    }
+
+    .footer .row {
+        margin: 3% 0;
+    }
+
+
+    .footer span {
+        color: #51c2b9;
+    }
+
+    .footer h4 {
+
+        color: #fff;
+        padding-top: 4%;
+        font-weight: 600;
+    }
+
+    .footer a {
+        color: #fff;
+    }
+
+
+
+
+    /*animations*/
+    .ubutia-card .ubutia-card-header .card-icon:after {
+        transition: all 0.3s ease-in-out;
+    }
+
+    .ubutia-card:hover .ubutia-card-header .card-icon:after {
+        height: 120px;
+        width: 120px;
+        top: -1px;
+        left: -1px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        background-color: #51c2b9;
+        margin: 5px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background-color: #51c2b9;
+        height: 14px;
+        width: 14px;
+        margin: 3px;
+    }
+
+
+
+
+
+
+
+    .cd-hero-slider .selected .cd-full-width figure.effect-bubba h2.tm-figure-title {
+        padding-top: 20%;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+
+    figure.effect-bubba p {
+        padding: 20px 1.5em;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+    }
+
+    figure.effect-bubba:hover img {
+        opacity: 0.4;
+    }
+
+    figure.effect-bubba figcaption::before,
+    figure.effect-bubba figcaption::after {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        content: '';
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+    }
+
+    figure.effect-bubba figcaption::before {
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -webkit-transform: scale(0, 1);
+        transform: scale(0, 1);
+    }
+
+    figure.effect-bubba figcaption::after {
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        -webkit-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+
+    figure.effect-bubba h2 {
+        padding-top: 30%;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0, -20px, 0);
+        transform: translate3d(0, -20px, 0);
+    }
+
+    figure.effect-bubba p {
+        padding: 20px 1.5em;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+    }
+
+
+    figure.effect-bubba:hover figcaption::before,
+    figure.effect-bubba:hover figcaption::after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .cd-hero-slider .selected .cd-full-width figure.effect-bubba:hover .tm-figure-title,
+    .cd-hero-slider .selected .cd-full-width figure.effect-bubba:hover p.tm-figure-description {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    /* Transição entre as páginas */
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    .fadeIn {
+        -webkit-animation: fadeIn 3s ease;
+        -moz-animation: fadeIn 3s ease;
+        -o-animation: fadeIn 3s ease;
+        animation: fadeIn 3s ease;
+    }
+
+
+
+
+
+    /* Galeria Masory da página ilustrações*/
+
+
+
+    .gallery.row {
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+        width: 90%;
+        margin: 0 auto;
+        ;
+
+    }
+
+    .gallery-list.col-md-12,
+    .gallery-list.col-md-6,
+    .gallery-list.col-md-4,
+    .gallery-list.col-md-3,
+    .gallery-list.col-md-2,
+    .gallery-list.col-md-1 {
+        padding: 20px;
+
+    }
+
+    .image-grid {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+        background-color: #484444d1;
+        ;
+        overflow: hidden;
+    }
+
+    .image-grid * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.45s ease;
+        transition: all 0.45s ease;
+    }
+
+    .image-grid img {
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+    }
+
+    .image-grid figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image-grid p {
+        margin: 10%;
+        opacity: 0;
+        letter-spacing: 1px;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        color: white;
+    }
+
+    .image-grid a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .image-grid:hover > img,
+    .image-grid.hover > img {
+        opacity: 0.1;
+    }
+
+    .image-grid:hover p {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .js-modal-image {
+        max-width: 100%;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-open .modal {
+        padding-top: 26vh;
+        background-color: transparent;
+    }
+
+    @media (max-width: 992px) {
+        .modal-open .modal {
+            padding-top: 100px;
+        }
+
+        .image-grid {
+            width: 100%;
+            height: 180px;
+        }
+
+    }
+
+
+    @media (max-width: 768px) {
+        .gallery.container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .gallery-list.col-md-12,
+        .gallery-list.col-md-6,
+        .gallery-list.col-md-4,
+        .gallery-list.col-md-3,
+        .gallery-list.col-md-2,
+        .gallery-list.col-md-1 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .gallery-row.row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .gallery-row.row.pdtb-40 {
+            padding-top: 10px;
+        }
+
+        .horizontal-nav {
+            margin-bottom: 0;
+        }
+
+        .modal-open .modal {
+            padding-top: 30vh;
+        }
+
+    }
+
+    /* Janela Modal de Informação */
+
+    .modal-header {
+
+        padding: 5%;
+
+    }
+
+    .modal {
+
+        margin: 0 auto !important;
+        padding-top: 7% !important;
+
+    }
+
+
+    .descricao_cliente {
+
+        background-color: black;
+        width: 100%;
+        margin: 0 auto;
+
+
+    }
+
+
+
+
+    @media (max-width: 767px) {
+        .ubutia-card {
+            margin-bottom: 60px;
+        }
+    }
+
+
+    /* Pop Up Informativa */
+
+
+    .btn-alert {
+
+        border-radius: 14px;
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    .modal-header p {
+
+        font-size: 1.6em;
+
+    }
+
+    /* Seção de Habilidades */
+
+
+    .habilidades {
+
+        font-size: 4em !important;
+        margin: 0 20%;
+
+        position: relative;
+        margin-bottom: 60px;
+       
+}
+    
+
+
+    /* Slide */
+
+    .carousel-indicators {
+        bottom: -60px;
+    }
+
+    .carousel-inner {
+        margin-bottom: 80px;
+    }
+
+    /* Seção Contato */
+
+    .social-icons ul a li {
+        display: inline-block;
+        list-style-type: none;
+        border: 2px solid #51c2b9;
+        margin-right: 10px;
+        background-color: #51c2b9;
+        color: #fff;
+        font-size: 40px;
+        line-height: 60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    a:link {
+        text-decoration: none;
+
+    }
+
+/* Páginas Sites */
+
+    .sites {
+    margin: 2% 0;
+        
+    }
+
+    /* CSS para dispositivos móveis */
+
+
+
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+
+
+
+
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+
+        .header p {
+            font-size: 22px;
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+
+        .m:after {
+            content: 'MENU';
+
+
+            position: absolute;
+
+            top: -28px;
+            color: #fff;
+            font-size: 4.5rem;
+        }
+
+        .c:after {
+            content: 'FECHAR';
+
+            position: absolute;
+            left: -88px;
+            top: -57px;
+            color: #fff;
+            font-size: 4.5rem;
+        }
+
+
+
+        .title:after {
+            display: none;
+        }
+
+
+        .ocultar_mobile {
+
+            visibility: hidden;
+            display: none;
+
+
+        }
+
+
+        .owl-carousel .owl-item img {
+            display: block;
+            width: 90%;
+            -webkit-transform-style: preserve-3d;
+            margin: 0 auto;
+        }
+
+
+        .habilidades_mobile {
+
+            display: block;
+            width: 50% !important;
+            -webkit-transform-style: preserve-3d;
+            margin: 0 auto;
+
+        }
+
+
+        .intro {
+            display: table-cell;
+            vertical-align: top;
+
+            padding-top: 8%;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 2.5rem;
+        }
+
+
+        .ubutia-btn {
+
+            margin: 0% 10% 12% 5%;
+
+        }
+        
+        
+        .ubutia-btn {
+    border-color: #51c2b9;
+    font-style: italic;
+    color: #51c2b9;
+    border-radius: 0;
+    letter-spacing: 1px;
+    padding: 15px 22px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+        .habilidades {
+            font-size: 2em !important;
+            margin: 0;
+            position: relative;
+            margin-bottom: 30px;
+             margin-top: 25px;  
+        }
+
+        .about p {
+            font-size: 1.8rem;
+            text-align: left;
+        }
+
+        .title {
+            position: relative;
+            margin-bottom: 20px;
+            margin-top: 5%;
+        }
+
+        .modal-header p {
+            font-size: 1.2em;
+        }
+
+
+
+        .btn-alert {
+            border-radius: 14px;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 15%;
+        }
+
+
+        .ubutia-quote p {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        h5 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 2rem;
+            font-style: italic;
+            color: #353434;
+        }
+
+
+        .small-btn {
+        padding: 10px 80px;
+        }
+
+        .ubutia-card {
+            margin-bottom: 5px;
+        }
+
+        .watch {
+            background-image: url(../images/7.jpg);
+            font-style: italic;
+            font-size: 22px;
+            color: #fff;
+            padding: 150px 0;
+            font-size: 32px;
+        }
+
+        .footer h4 {
+            color: #fff;
+            padding-top: 10%;
+            font-weight: 600;
+            font-size: 1.4em;
+            line-height: 2.0em;
+        }
+
+        .body-cliente p {
+            font-size: 2.0rem;
+            text-align: center;
+        }
+
+
+        /*Home page*/
+        .header {
+            background-image: url(../images/1.jpg);
+            height: 70vh;
+            position: relative;
+            min-height: 360px;
+        }
+
+
+        /*Central dos Sítios*/
+        .header_c1 {
+            background-image: url(../img_centraldossitios/fundo2.jpg);
+            height: 65vh;
+            position: relative;
+            min-height: 360px;
+        }
+
+
+        /*Instituto JCalvino*/
+        .header_c2 {
+            background-image: url(../img_jcalvino/fundo_jcalvino.jpg);
+            height: 65vh;
+            position: relative;
+            min-height: 360px;
+        }
+
+
+        /*AddTech*/
+        .header_c3 {
+            background-image: url(../img_addtech/fundo.jpg);
+            height: 65vh;
+            position: relative;
+            min-height: 360px;
+        }
+
+
+        /*CF Contabilidade*/
+        .header_c4 {
+            background-image: url(../img_cfcontabilidade/fundo.jpg);
+            height: 65vh;
+            position: relative;
+            min-height: 360px;
+        }
+
+
+        /*JL Atacado*/
+        .header_c5 {
+            background-image: url(../img_jlatacado/fundo.jpg);
+            height: 65vh;
+            position: relative;
+            min-height: 360px;
+        }
+
+        /*Previnity*/
+        .header_c6 {
+            background-image: url(../img_previnity/fundo.jpg);
+            height: 65vh;
+            position: relative;
+            min-height: 360px;
+        }
+
+        .owl-theme .owl-controls {
+            margin-top: 0px;
+            margin-bottom: 15px;
+
+        }
+
+        .owl-theme .owl-dots .owl-dot {
+            display: inline-block;
+            zoom: 2;
+
+        }
+        
+        
+        .row {
+        
+            padding: 0 5%;
+
+        }
+        
+        .header h1 {
+    margin: 0;
+    padding-bottom: 5%;
+}
+        
+        
+        .col-xs-8 {
+    width: 100%;
+            
+}
+        
+        .col-xs-4 {
+    width: 100%;
+    padding: 15% 0;        
+            
+}
+        
+        .titulo-produtos h3 {
+    color: white;
+    font-size: 4rem;
+    padding-top: 20.5%;
+}
+        
+        hr {
+            
+            margin:0;
+            
+            
+        }
+        
+        
+        .modal-body {
+    padding: 0;
+    display: none;
+}
+        
+        .expert p {
+    line-height: 133%;
+    margin-top: 11%;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+        
+        h6 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+        
+        .noticia-topo h5 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: none;
+    font-family: sans-serif;
+    line-height: 4.5rem;
+}
+
+        
+        
+
+
+}
+
