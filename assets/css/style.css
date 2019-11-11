@@ -28,7 +28,11 @@
         margin-top: 0;
     }
 
-    h1 {
+    .intro h1 {
+        font-size:6em;
+    }
+
+    .ubutia-card-section h1 {
         font-size: 5rem;
     }
 
@@ -80,7 +84,7 @@
 
     .title {
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
     }
 
     .title:after {
